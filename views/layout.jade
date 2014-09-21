@@ -30,6 +30,15 @@ html(lang='en')
   body
     script(src='flatui/js/vendor/jquery.min.js', charset='utf-8')
     script(src='flatui/js/flat-ui-pro.min.js', charset='utf-8')
+    block navbar
+      div.navbar.navbar-inverse.navbar-top
+        div.container
+          ul
+            li.push-right
+              a.brand(href="#")
+                img(src="images/mds-benturi.png",width="15%", height="15%")
+          
+     
     block content
     <!--[if lt IE 8]>
     script(src="flatui/js/vendor/ie7.js", charset='utf-8')
