@@ -8,7 +8,6 @@ services:
       language: nodejs
       nodejs:
         - 0.10
-        - 0.11
       propeller:
         ports:
           FRONTEND_HTTP: 8000 
@@ -16,10 +15,10 @@ services:
         services:
           - postgres
       heroku:
-        app: mdsprop
+        app: mdscom
   - backend:
       language: nodejs
       propeller:
         instances: 1
       heroku:
-        app: mdsprop
+        app: mdscom
